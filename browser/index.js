@@ -4,6 +4,7 @@ var stream = require('readable-stream')
 var inherits = require('inherits')
 var sign = require('./sign')
 var verify = require('./verify')
+var Buffer = require('buffer/').Buffer
 
 var algorithms = require('./algorithms.json')
 Object.keys(algorithms).forEach(function (key) {
